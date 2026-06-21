@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🎉 Happy Birthday 🎉</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <h1>🎉 Happy Birthday Love🎉</h1>
+        <button onclick="playMusic()">Play Music</button>
+        <button onclick="showLetter()">Open Letter</button>
+        <button onclick="showVideos()">Videos of Me</button>
+    </div>
+
+<div id="letter">
+
+    <h2>Dear Love,</h2>
+
+    <p>
+        I just want to take a moment to tell you how grateful I am for having you in my life...
+    </p>
+
+    <p>
+        Thank you for never giving up on us, even during the times when life became overwhelming...
+    </p>
+
+    <p>
+        I also hope you're happy with the design, the website I made, and even the pictures I used...
+    </p>
+
+    <p>
+        Thank you for being my partner, my support system, and my safe place...
+    </p>
+
+    <p>
+        No matter what challenges come our way, I hope we continue to face them together...
+    </p>
+
+    <br>
+
+    <p>
+        With all my love,<br>
+        <strong>Zari</strong>
+    </p>
+
+</div>
+
+    </p>
+    </div>
+
+    <script src="script.js"></script>
+
+    <br><br>
+    <audio id="birthdayMusic" controls>
+    <source src="OST OP Mp3.mp3" type="audio/mpeg">
+    </audio>
+
+<div id="videoSection" style="display:none;">
+
+    <video id="mainVideo" controls width="600">
+        <source src="Video 1.mp4" type="video/mp4">
+    </video>
+
+    <br><br>
+
+    <button onclick="changeVideo('Video 1.mp4')">Video 1</button>
+    <button onclick="changeVideo('Video 2.mp4')">Video 2</button>
+    <button onclick="changeVideo('Video 3.mp4')">Video 3</button>
+
+</div>
+<script>
+function playMusic() {
+    const music = document.getElementById("birthdayMusic");
+    music.play();
+}
+</script> 
+</body>
+</html>
